@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+    <!-- link:css -->
+    <style>
+        /* CSS reset = I will change the Margin and Padding of BODY */
+        body{
+            font-family: 'Baloo Bhai 2', cursive;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/1920px/11. 1893_1090px pexels-sabel-blanco-1554824-SET.jpg');
+            /* background: url('img/2. anastase-maragos-aclkvEMIfL8-unsplash.jpg'); */
+            height: 1050px;
+            width: 100%;
+        }
+        .left{
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 20px;
+            top: 5px;
+        }
+        .left img{
+            width: 150px;
+            filter:invert(100%)
+        }
+        /* .left div{
+            line-height: 12px;
+            font-size: 26px;
+            text-align: center;
+        } */
+        .mid{
+            display: block;
+            width: 50%;
+            margin: 12px auto;
+            /* Margin = to center any element. Y-axis * X-axis.
+            To set margi we need 3 conditions = Display, Width & Margin*/
+            /* border: 2px solid green; */
+
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+        /* This positioning of boxes could have been done with the help
+        of Flex Boxes & Float. */
+        .navbar{
+            display: inline-block;
+            /* In "Inline-block" we can set Width and Height.*/
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 25px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            /* Text-Decoration = to remove underline */
+            padding: 34px 20px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: #ff6f6f;
+            /* color: rgb(254, 144, 108); */
+        }
+        .btn{
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px 9px;
+            /* Margin(distance from top(Y-axis), & horizontally(X-axis) */
+            background-color: #280f32;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(103, 29, 0);
+        }
+        .container{
+            border: 2px solid rgb(255, 255, 255);
+            margin: 106px 80px;
+            padding: 60px;
+            width: 33%;
+            border-radius: 30px;
+        }
+        .form-group input{
+            text-align: center;
+            padding: 1px;
+            border: 2px solid #1f062a;
+            display: block;
+            width: 508px;
+            margin: 3px auto;
+            /* As I have set display: block and width, so I am eligible for setting Margin to center.😃👍 */
+            font-size: 25px;
+            border-radius: 12px;
+        }
+        .container h1{
+           text-align: center; 
+        }
+        .container button{
+            display: block;
+            width: 39%;
+            margin: 20px auto;
+        }
+    </style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="img/2. fitness-logo_602204604b4d7.png" alt="">
+            <!-- <div>Ayush Fitness</div> -->
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#a" class="active">Home</a></li>
+                <li><a href="#a">About Us</a></li>
+                <li><a href="#a">Fitness Calculator</a></li>
+                <li><a href="#a">Contact Us</a></li>
+            </ul>
+            <!-- mid box for navbar -->
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+            <!-- right box for buttons -->
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <!-- div.form-group -->
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Genger">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
